@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "mini";
+    src: url("mini.woff") format("woff"),
+    url("mini.woff") format("woff"),
+    url("mini.ttf") format("truetype"),
+    url("mini.eot") format("embedded-opentype"),
+    url("mini.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    min-width:1200px ;
+    min-height: 740px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #010501 url("../pic/7735.jpg") center/cover no-repeat ;
+    //filter: grayscale(100%);
+    transition: background-image 0.8s linear;
+    position: relative;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.94);
+   // background-color: rgba(255, 41, 6, 0.2);
+    display: none;
+}
+header:after,#card:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#navigator-1{ float: left;
+    padding-top: 8px;
+}
+#navigator-1 span{
+    padding: 0 10px 0 10px;font-size: 1.2em;
+    line-height: 1.2em;font-weight: 600;
+    color: #3d3d3d;
+}
+#navigator-1 form #search{
+    background:url("../pic/search.png") no-repeat 0 50%;
+    background-size: 22px 22px;
+}
+#navigator-1 form #search{
+    background-color: rgba(185, 185, 185, 0.2);
+    border: 1px solid transparent;
+    outline-color: transparent;
+    height: 30px;width: 380px;
+    color: #333;
+    padding: 0 0 0 27px;
+}
+#navigator-1 form #submit{
+    height: 30px;width: 50px;font-weight: 200;
+    background-color: orangered;
+    color: whitesmoke;border: 1px solid orangered;
+}
+#navigator-2{
+    float: right;
+    margin-right:1em;
+}
+#navigator-2 ul li {
+    padding: 0 12px;
+    float: left;
+    list-style-type: none;
+}
+#navigator-2 ul li a{
+    font-family:"mini";
+    padding: 0 0 4px 0;display: block;
+    text-decoration: none;font-size: 1.1em;
+    line-height: 25px;color: #333;font-weight: 500;
+}
+#navigator-2 ul li:hover .underline{
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease-in-out;
+    /*background-color: orangered;width:100%;
+    transition: width 0.5s ease-in-out;*/
+}
+#navigator-2 ul li .underline{
+    transform: rotateY(90deg);
+    height: 3px;width:100%;background-color: orangered;
+    transition: all 0.5s linear;
+  /* border: 0;height: 3px;width:0;//background-color: orangered;
+   transition: all 0.5s linear;*/
+}
+#shi{
+    position: absolute;
+    left: 15%;top: calc(50% - 95px);display: none;
+}
+#shi >div span,#shi div div a{
+    font-family:"mini";
+    font-size: 1.7em;
+    line-height: 1.7em;
+    color: rgba(141, 176, 167, 0.8);
+    font-weight: 100;
+}
+#shi >div span:first-letter{
+    font-size: 2em;color: #276344;
+}
+#shi >div div{
+    transform: skew(30deg);
+    background-color: orangered;
+    width: 270px;
+    margin-left:80px ;
+    margin-top: 10px;
+
+}
+#shi div div a{
+    transform: skew(-30deg);width: 245px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+#shi div div a:hover{
+    //color:#284253;font-weight:500;
+}
+#shi >div div:hover{
+    box-sizing: border-box;
+    border: 1px solid  #6a006a;
+    box-shadow: inset -5px 0 3px #6a006a,inset 5px 0 3px #6a006a;
+    background-color: rebeccapurple;
+}
+#card{
+   float: right;
+   margin-top:15%;overflow: hidden;
+    padding-left: 160px;
+}
+#card ul{
+    position: relative;
+
+    height: 300px;
+}
+#card ul li {
+    height: 35px;width: 160px;
+    color: #e7e7e7;
+    list-style-type: none;
+    font-size: 1.4em;
+    text-align: center;
+    padding:12px 18px;
+    cursor: pointer;
+   box-shadow:0 -2px  2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transition:right 0.4s ease-out;
+}
+#card ul li:nth-of-type(1){
+    background-color: orangered;
+    //background-image:linear-gradient(135deg,transparent  25%,orangered 0);
+    box-shadow:none;
+    right: -100px;
+}
+#card ul li:nth-of-type(2){
+    background-color: #f4a720;
+    //background-image:linear-gradient(45deg,transparent  25%,#f4a720 0);
+    right: -100px;
+    top:59px;
+}
+#card ul li:nth-of-type(3){
+    background-color: #EF8C12;
+    right: -100px;
+    top:118px;
+}
+#card ul li:nth-of-type(4){
+    background-color: #4d7186;
+    right: -100px;
+    top:177px;
+}
+#card ul li:nth-of-type(5){
+    background-color: #284253;
+    right: -100px;
+    top:236px;
+}
+#card ul li:hover{
+    right: 0;
+    transition:right 0.4s ease-out;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(1, 5, 1, 0.09);
+}
+footer div{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer div span{
+   color: rgba(79, 0, 79, 0.3);
+}
